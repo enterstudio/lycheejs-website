@@ -1,0 +1,64 @@
+{
+	"version": "2016-Q4",
+	"release": "2016-03-31T00:00:00Z",
+	"tutorials": [{
+		"identifier":    "boilerplate",
+		"readme":        "boilerplate.md",
+		"packages":      [{
+			"fertilizer":   "html",
+			"target":       "Browser",
+			"architecture": "all",
+			"download":     "boilerplate_html-nwjs_browser_all.zip"
+		}, {
+			"fertilizer":   "html-nwjs",
+			"target":       "Linux",
+			"architecture": "amd64",
+			"download":     "boilerplate_html-nwjs_linux_amd64.zip"
+		}, {
+			"fertilizer":   "html-nwjs",
+			"target":       "OSX",
+			"architecture": "amd64",
+			"download":     "boilerplate_html-nwjs_osx_amd64.zip"
+		}, {
+			"fertilizer":   "html-nwjs",
+			"target":       "Windows",
+			"architecture": "amd64",
+			"download":     "boilerplate_html-nwjs_windows_amd64.zip"
+		}, {
+			"fertilizer":   "html-webview",
+			"target":       "Android",
+			"architecture": "all",
+			"download":     "boilerplate_html-webview_android_all.zip"
+		}, {
+			"fertilizer":   "html-webview",
+			"target":       "FirefoxOS",
+			"architecture": "all",
+			"download":     "boilerplate_html-webview_firefoxos_all.zip"
+		}, {
+			"fertilizer":   "html-webview",
+			"target":       "Ubuntu Touch",
+			"architecture": "arm",
+			"download":     "boilerplate_html-webview_ubuntutouch_arm.zip"
+		}, {
+			"fertilizer":   "node",
+			"target":       "Linux",
+			"architecture": "arm",
+			"download":     "boilerplate_html-webview_ubuntutouch_arm.zip"
+		}]
+	}, {
+		"identifier": "lethalmaze",
+		"packages":   [ "boilerplate-html.zip", "boilerplate-html-nwjs.zip", "boilerplate-node.zip", null ],
+		"platforms":  [ "html", "html-nwjs", "node", "node-sdl" ],
+		"readme":    "lethalmaze.md"
+	}, {
+		"identifier": "Create an App Client",
+		"skillset":   [ "beginner" ],
+		"package":    "app-client.zip",
+		"readme":    "app-client.md"
+	}, {
+		"identifier": "Fertilize an App",
+		"skillset":   [ "advanced" ],
+		"package":    null,
+		"readme":    "app-fertilize.md"
+	}]
+}

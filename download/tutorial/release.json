@@ -1,0 +1,25 @@
+{
+	"version": "2016-Q4",
+	"release": "2016-03-31T00:00:00Z",
+	"tutorials": [{
+		"identifier": "Introduction",
+		"skillset":   [ "beginner" ],
+		"package":    null,
+		"content":    "introduction.md"
+	}, {
+		"identifier": "Create an App Server",
+		"skillset":   [ "beginner" ],
+		"package":    "app-server.zip",
+		"content":    "app-server.md"
+	}, {
+		"identifier": "Create an App Client",
+		"skillset":   [ "beginner" ],
+		"package":    "app-client.zip",
+		"content":    "app-client.md"
+	}, {
+		"identifier": "Fertilize an App",
+		"skillset":   [ "advanced" ],
+		"package":    null,
+		"content":    "app-fertilize.md"
+	}]
+}

@@ -1,0 +1,40 @@
+{
+	"version": "2015-Q4",
+	"release": "2015-11-30T00:00:00Z",
+	"tutorials": [{
+		"identifier": "Introduction",
+		"skillset":   [ "beginner" ],
+		"package":    null,
+		"content":    "introduction.md"
+	}, {
+		"identifier": "Create an App Server",
+		"skillset":   [ "beginner" ],
+		"package":    "app-server.zip",
+		"content":    "app-server.md"
+	}, {
+		"identifier": "Create an App Client",
+		"skillset":   [ "beginner" ],
+		"package":    "app-client.zip",
+		"content":    "app-client.md"
+	}, {
+		"identifier": "Create an App UI",
+		"skillset":   [ "advanced" ],
+		"package":    "app-ui.zip",
+		"content":    "app-ui.md"
+	}, {
+		"identifier": "Create an App AI",
+		"skillset":   [ "advanced" ],
+		"package":    "app-ai.zip",
+		"content":    "app-ai.md"
+	}, {
+		"identifier": "Connect an App AI",
+		"skillset":   [ "advanced" ],
+		"package":    "app-ai-connect.zip",
+		"content":    "app-ai-connect.md"
+	}, {
+		"identifier": "Fertilize an App",
+		"skillset":   [ "advanced" ],
+		"package":    "app-fertilize.zip",
+		"content":    "app-fertilize.md"
+	}]
+}
