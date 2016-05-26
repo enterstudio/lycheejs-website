@@ -26,7 +26,6 @@ if [ -e "$LYCHEEJS_HELPER" ]; then
 	rm -rf "$PROJECT_ROOT/build/html";
 
 	echo "SUCCESS";
-
 	exit 0;
 
 else
