@@ -3,13 +3,23 @@
 
 LYCHEEJS_ROOT="/opt/lycheejs";
 LYCHEEJS_BRANCH="development";
-
+GIT=`which git`;
 
 
 if [ "$USER" != "root" ]; then
 
 	echo "You are not root.";
 	echo "Use \"sudo $0\"";
+
+	exit 1;
+
+fi;
+
+
+
+if [ "$GIT" == "" ]; then
+
+	echo "Please install git and execute this installer again.";
 
 	exit 1;
 
