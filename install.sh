@@ -48,7 +48,7 @@ echo "Installing lychee.js ...";
 
 	cd "$LYCHEEJS_ROOT";
 
-	git clone https://github.com/Artificial-Engineering/lycheeJS ./;
+	git clone https://github.com/Artificial-Engineering/lycheejs.git ./;
 	git checkout "$LYCHEEJS_BRANCH";
 
 echo "Done.";
@@ -67,7 +67,7 @@ echo "Installing lycheejs runtimes ...";
 
 	cd "$LYCHEEJS_ROOT";
 
-	git clone --depth 1 https://github.com/Artificial-Engineering/lycheeJS-runtime --branch master --single-branch ./bin/runtime;
+	git clone --depth 1 https://github.com/Artificial-Engineering/lycheejs-runtime.git --branch master --single-branch ./bin/runtime;
 
 echo "Done.";
 

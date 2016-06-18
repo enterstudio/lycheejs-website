@@ -8,18 +8,18 @@ that uses the `node` platform stack with the
 
 ## Prerequisites
 
-You should have successfully installed lycheeJS already.
-If you haven't installed lycheeJS on your development machine,
+You should have successfully installed lychee.js already.
+If you haven't installed lychee.js on your development machine,
 you can follow the instructions at the [Bundles](#!bundles)
 section on the left.
 
 
 ## Initialize the Project
 
-The `/projects` folder inside the lycheeJS directory contains
-all projects made with lycheeJS. It already contains many
+The `/projects` folder inside the lychee.js directory contains
+all projects made with lychee.js. It already contains many
 examples and demos that you can open, edit and manipulate
-with the lycheeJS tools.
+with the lychee.js tools.
 
 First of all, we need to create our new project using the
 `lycheejs-breeder` command line tool. The Breeder is the
@@ -27,9 +27,9 @@ tool that helps you setup your application in a convenient
 way, so that you don't waste much time copy/pasting all the
 necessary Boilerplate code yourself.
 
-It is explicitely important to create lycheeJS projects
+It is explicitely important to create lychee.js projects
 only in the `lycheejs/projects` subfolder in order to have
-all features offered by the lycheeJS stack.
+all features offered by the lychee.js stack.
 
 As all tools are cross-dependent, the Breeder also interacts
 with the Fertilizer, Strainer, Harvester, Editor, Ranger
@@ -53,13 +53,13 @@ should look like this:
 
 
 By default the Breeder automatically injects the `lychee`
-library. As the `lycheeJS` folder has the `/libraries` and
+library. As the lychee.js folder has the `/libraries` and
 `/projects` folders as a convention, all projects have also
 an (optional) `/libraries` folder.
 
 The advantage hereby granted is that you can later deploy an
 isolated project to other servers without having to have
-lycheeJS installed there.
+lychee.js installed there.
 
 ```
 /projects/tutorial
@@ -113,7 +113,7 @@ Terminal window.
 ```bash
 cd /opt/lycheejs;
 
-# Run lycheeJS
+# Run lychee.js Harvester
 lycheejs-harvester start development;
 ```
 
@@ -166,8 +166,8 @@ Each Definition has an `exports()` call with the so-called Definition
 Body. This body contains and returns the actual Implementation of
 your Definition.
 
-The lycheeJS Codestyle and how the Definition Layout looks like is
-explained more in detail in the [CODESTYLE](https://github.com/Artificial-Engineering/lycheeJS/blob/master/guides/CODESTYLE.md#definition-layout)
+The lychee.js Codestyle and how the Definition Layout looks like is
+explained more in detail in the [CODESTYLE](https://github.com/Artificial-Engineering/lychee.js/blob/master/guides/CODESTYLE.md#definition-layout)
 Guide.
 
 
@@ -238,7 +238,7 @@ inside the `connect event` of the server afterwards!
 
 As you changed the server's implementation, you now have to restart it.
 Therefore you can either restart the `lycheejs-harvester` completely
-(which would be a shame resource-wise) or you can use the lycheeJS Ranger
+(which would be a shame resource-wise) or you can use the lychee.js Ranger
 for that purpose.
 
 You can now execute `lycheejs-ranger` in a Terminal window and the native

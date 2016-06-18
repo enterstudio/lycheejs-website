@@ -10,7 +10,7 @@ if [ -d $PROJECT_ROOT/build ]; then
 	echo "lychee.js.org" > $PROJECT_ROOT/build/CNAME;
 	rm -rf ./.git;
 	git init;
-	git remote add origin git@github.com:Artificial-Engineering/lycheeJS-website.git;
+	git remote add origin git@github.com:Artificial-Engineering/lycheejs-website.git;
 	git checkout -b gh-pages;
 	git add ./;
 	git commit -m ":construction: lychee.js fertilizer package :construction:";

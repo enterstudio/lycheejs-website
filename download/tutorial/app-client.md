@@ -8,8 +8,8 @@ that uses the `html` platform stack with the
 
 ## Prerequisites
 
-You should have successfully installed lycheeJS already.
-If you haven't installed lycheeJS on your development machine,
+You should have successfully installed lychee.js already.
+If you haven't installed lychee.js on your development machine,
 you can follow the instructions at the [Bundles](#!bundles)
 section on the left.
 
