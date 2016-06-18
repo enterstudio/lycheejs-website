@@ -11,8 +11,8 @@ scenes and it uses the identical toolchain.
 
 ## Prerequisites
 
-You should have successfully installed lycheeJS already.
-If you haven't installed lycheeJS on your development machine,
+You should have successfully installed lychee.js already.
+If you haven't installed lychee.js on your development machine,
 you can follow the instructions at the [Bundles](#!bundles)
 section on the left.
 
@@ -20,7 +20,7 @@ section on the left.
 ## Build Targets inside lychee.pkg
 
 The isomorphic Boilerplate is already fully integrated with
-the lycheeJS stack. It has a `lychee.pkg` that has a fully
+the lychee.js stack. It has a `lychee.pkg` that has a fully
 setup `/build` section for all isomorphic platforms.
 
 The `/build/environments` section in the JSON file has
@@ -61,7 +61,7 @@ identifier must fulfill of the `platform/target` scheme.
 
 All `lychee.Environment` instances are completely serializable,
 which means they can be snapshotted and reproduced 1:1 on any
-other lycheeJS-supported platform.
+other lychee.js-supported platform.
 
 
 ## The lychee.Environment Serialization Concept
@@ -72,7 +72,7 @@ the UI events like touches, swipes and keyboard or gamepad
 commands are serialized - so user-caused errors in your App
 logic are also reproducible and simulateable 1:1.
 
-The important part here is that lycheeJS supports incremental
+The important part here is that lychee.js supports incremental
 platforms (or fertilizers). For example, the `html-nwjs`
 runtime inherits from `html`.
 
@@ -80,7 +80,7 @@ When the `/tags/platform` setting of a `lychee.Environment`
 is set to an `Array of platforms` it will try to respect
 supported platforms dynamically when they are supported.
 
-All Definitions in the lycheeJS stack have a `supports()`
+All Definitions in the lychee.js stack have a `supports()`
 method that is called to determine the compatibility with
 the (simulated or) currently executed platform runtime.
 
@@ -125,4 +125,19 @@ file. A direct comparison of the Boilerplate running in the Web Browser
 and as a native App looks like this:
 
 ![tutorial-demo](./asset/app-fertilize-demo.png)
+
+
+## Customize the Fertilizing Process
+
+If you want to customize your project with a third-party build toolchain,
+you can introduce the `./bin/configure.sh` , `./bin/build.sh` and
+`./bin/package.sh` shell scripts.
+
+Those scripts are always called right after the equivalent step was
+successfully completed by the `lycheejs-fertilizer`.
+
+If you're unsure on how to integrate your existing build toolchain with
+lychee.js, you can take a look at the [lycheejs-website](https://github.com/Artificial-Engineering/lycheejs-website.git)
+repository which is automatically built and deployed.
+
 

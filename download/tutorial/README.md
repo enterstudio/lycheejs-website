@@ -1,3 +1,3 @@
 
-This is the folder for all lycheeJS Tutorials.
+This is the folder for all lychee.js Tutorials.
 
