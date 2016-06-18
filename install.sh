@@ -100,6 +100,6 @@ echo "Now bootup lychee.js by starting lycheejs-harvester.";
 	echo "2. Start lycheejs-harvester with this command:";
 	echo "";
 	echo "cd $LYCHEEJS_ROOT;";
-	echo "lycheejs-harvester start development; # Trailing --sandbox for sandboxed harvester";
+	echo "lycheejs-harvester start development;";
 	echo "";
 
