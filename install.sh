@@ -46,7 +46,7 @@ fi;
 
 
 echo "";
-echo "Installing lychee.js ...";
+echo "Installing lychee.js Engine ...";
 
 	if [ ! -d "$LYCHEEJS_ROOT" ]; then
 		mkdir -m 0777 "$LYCHEEJS_ROOT";
@@ -65,7 +65,7 @@ echo "Done.";
 
 
 echo "";
-echo "Installing lycheejs runtimes ...";
+echo "Installing lychee.js Runtimes ...";
 
 	if [ ! -d "$LYCHEEJS_ROOT/bin/runtime" ]; then
 		mkdir -m 0777 "$LYCHEEJS_ROOT/bin/runtime";
@@ -82,7 +82,7 @@ echo "Installing lycheejs runtimes ...";
 echo "Done.";
 
 echo "";
-echo "Configuring lychee.js ...";
+echo "Configuring lychee.js Engine ...";
 
 	cd $LYCHEEJS_ROOT;
 
@@ -93,11 +93,11 @@ echo "Done.";
 echo "";
 echo "";
 echo "";
-echo "Now bootup lychee.js by starting lycheejs-harvester.";
+echo "Now you need to start the lychee.js Harvester.";
 
 	echo "";
 	echo "1. Modify $LYCHEEJS_ROOT/bin/harvester/development.json";
-	echo "2. Start lycheejs-harvester with this command:";
+	echo "2. Start lychee.js Harvester with this command:";
 	echo "";
 	echo "cd $LYCHEEJS_ROOT;";
 	echo "lycheejs-harvester start development;";
