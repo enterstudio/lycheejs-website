@@ -4,14 +4,15 @@ LYCHEEJS_ROOT=$(cd "$(dirname "$(readlink -f "$0")")/../../../"; pwd);
 PROJECT_ROOT=$(cd "$(dirname "$(readlink -f "$0")")/../"; pwd);
 
 
-cd $PROJECT_ROOT;
+if [ -d $PROJECT_ROOT/build ]; then
 
-branch=`git branch --list gh-pages`;
-
-if [ "$branch" != "" ]; then
-
+	cd $PROJECT_ROOT/build;
 	git checkout gh-pages;
 	git push origin gh-pages -f;
+
+	cd $PROJECT_ROOT;
+	git checkout master;
+	git push origin master -f;
 
 	echo "SUCCESS";
 	exit 0;
