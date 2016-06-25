@@ -18,6 +18,7 @@ if [ -e "$LYCHEEJS_HELPER" ]; then
 	cp "$PROJECT_ROOT/build/lychee.pkg" "$PROJECT_ROOT/build/libraries/lychee/lychee.pkg";
 	cp "$PROJECT_ROOT/install.sh" "$PROJECT_ROOT/build/install.sh";
 	cp "$PROJECT_ROOT/favicon.ico" "$PROJECT_ROOT/build/favicon.ico";
+	cp "$PROJECT_ROOT/miracle.xml" "$PROJECT_ROOT/build/miracle.xml";
 
 	cp -R "$PROJECT_ROOT/asset" "$PROJECT_ROOT/build/asset";
 	cp -R "$PROJECT_ROOT/design" "$PROJECT_ROOT/build/design";
