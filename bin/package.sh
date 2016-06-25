@@ -13,8 +13,8 @@ if [ -d $PROJECT_ROOT/build ]; then
 	git remote add origin git@github.com:Artificial-Engineering/lycheejs-website.git;
 	git checkout -b gh-pages;
 	git add ./;
-	git commit -m ":construction: lychee.js fertilizer package :construction:";
-	git push origin gh-pages -f;
+	git commit -m ":construction: lychee.js CI build :construction:";
+	git checkout master;
 
 	echo "SUCCESS";
 	exit 0;
