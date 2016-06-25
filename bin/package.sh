@@ -1,6 +1,7 @@
 #!/bin/bash
 
 LYCHEEJS_ROOT=$(cd "$(dirname "$(readlink -f "$0")")/../../../"; pwd);
+LYCHEEJS_VERSION=$(cd $LYCHEEJS_ROOT && cat ./libraries/lychee/source/core/lychee.js | grep VERSION | cut -d\" -f2);
 PROJECT_ROOT=$(cd "$(dirname "$(readlink -f "$0")")/../"; pwd);
 
 
@@ -13,7 +14,7 @@ if [ -d $PROJECT_ROOT/build ]; then
 	git remote add origin git@github.com:Artificial-Engineering/lycheejs-website.git;
 	git checkout -b gh-pages;
 	git add ./;
-	git commit -m ":construction: lychee.js CI build :construction:";
+	git commit -m ":construction: lychee.js Website $LYCHEEJS_VERSION CI build :construction:";
 	git checkout master;
 
 	echo "SUCCESS";
