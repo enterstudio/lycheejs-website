@@ -6,9 +6,8 @@
  * BOOTSTRAP
  */
 
-var _child_process = require('child_process');
-var _fs            = require('fs');
-var _root          = __dirname.split('/').slice(0, 3).join('/');
+var _fs   = require('fs');
+var _root = __dirname.split('/').slice(0, 3).join('/');
 
 require(_root + '/libraries/lychee/build/node/core.js')(__dirname.split('/').slice(0, -1).join('/'));
 
