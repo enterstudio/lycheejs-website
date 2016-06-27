@@ -61,7 +61,7 @@ lychee.define('app.Main').requires([
 
 	var Class = function(data) {
 
-		var settings = lychee.extend({}, _CONFIG, data);
+		var settings = Object.assign({}, _CONFIG, data);
 
 
 		lychee.app.Main.call(this, settings);

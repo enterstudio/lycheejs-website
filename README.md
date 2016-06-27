@@ -1,5 +1,5 @@
 
-# lychee.js website
+# lychee.js Website
 
 brought to you as libre software with joy and pride by [Artificial Engineering](http://artificial.engineering).
 
