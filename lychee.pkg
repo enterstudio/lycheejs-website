@@ -28,6 +28,10 @@
 		"environments": {},
 		"tags": {},
 		"files": {
+			"Main": [
+				"js",
+				"json"
+			],
 			"data": {
 				"HTML": [
 					"js"
@@ -36,10 +40,6 @@
 					"js"
 				]
 			},
-			"Main": [
-				"js",
-				"json"
-			],
 			"state": {
 				"About": [
 					"js"
