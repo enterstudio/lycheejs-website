@@ -1,7 +1,7 @@
 
 lychee.define('app.state.Examples').requires([
-	'lychee.data.HTML',
-	'lychee.data.MD'
+	'app.data.HTML',
+	'app.data.MD'
 ]).includes([
 	'lychee.app.State',
 	'lychee.event.Emitter'
@@ -9,8 +9,8 @@ lychee.define('app.state.Examples').requires([
 	platform: 'html'
 }).exports(function(lychee, global, attachments) {
 
-	const _HTML    = lychee.import('lychee.data.HTML');
-	const _MD      = lychee.import('lychee.data.MD');
+	const _HTML    = lychee.import('app.data.HTML');
+	const _MD      = lychee.import('app.data.MD');
 	const _Emitter = lychee.import('lychee.event.Emitter');
 	const _State   = lychee.import('lychee.app.State');
 	const _README  = {

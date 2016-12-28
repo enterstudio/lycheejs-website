@@ -22,132 +22,20 @@
 				"variant": "library"
 			}
 		},
-		"files": {
-			"asset": {
-				"asset": {
-					"screenshot": {},
-					"state": {
-						"Introduction": {}
-					}
-				},
-				"screenshot": {},
-				"state": {
-					"Introduction": {}
-				}
-			},
-			"core": [
-				"js"
-			],
-			"design": {
-				"design": {
-					"desktop": [
-						"png"
-					],
-					"highlight": [
-						"js"
-					],
-					"index": [
-						"js"
-					]
-				},
-				"desktop": [
-					"png"
-				],
-				"highlight": [
-					"js"
-				],
-				"index": [
-					"js"
-				]
-			},
-			"download": {
-				"bundle": {
-					"README": [
-						"md"
-					]
-				},
-				"download": {
-					"bundle": {
-						"README": [
-							"md"
-						]
-					},
-					"example": {
-						"asset": {
-							"boilerplate": [
-								"png"
-							],
-							"lethalmaze": [
-								"png"
-							],
-							"mode7": [
-								"png"
-							],
-							"over-there": [
-								"png"
-							]
-						},
-						"boilerplate": [
-							"md"
-						],
-						"lethalmaze": [
-							"md"
-						],
-						"mode7": [
-							"md"
-						],
-						"over-there": [
-							"md"
-						],
-						"release": [
-							"json"
-						]
-					}
-				},
-				"example": {
-					"asset": {
-						"boilerplate": [
-							"png"
-						],
-						"lethalmaze": [
-							"png"
-						],
-						"mode7": [
-							"png"
-						],
-						"over-there": [
-							"png"
-						]
-					},
-					"boilerplate": [
-						"md"
-					],
-					"lethalmaze": [
-						"md"
-					],
-					"mode7": [
-						"md"
-					],
-					"over-there": [
-						"md"
-					],
-					"release": [
-						"json"
-					]
-				}
-			},
-			"index": [
-				"js"
-			],
-			"libraries": {
-				"lychee": {}
-			}
-		}
+		"files": {}
 	},
 	"source": {
 		"environments": {},
 		"tags": {},
 		"files": {
+			"data": [
+				"HTML": [
+					"js"
+				],
+				"MD": [
+					"js"
+				]
+			],
 			"Main": [
 				"js",
 				"json"
