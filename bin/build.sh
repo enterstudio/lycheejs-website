@@ -13,6 +13,10 @@ if [ -e "$LYCHEEJS_HELPER" ]; then
 
 	cd $PROJECT_ROOT;
 
+	cp "$PROJECT_ROOT/index.html" "$PROJECT_ROOT/build/index.html";
+	cp "$PROJECT_ROOT/examples.html" "$PROJECT_ROOT/build/examples.html";
+	cp "$PROJECT_ROOT/workflow.html" "$PROJECT_ROOT/build/workflow.html";
+
 	cp "$PROJECT_ROOT/install.sh" "$PROJECT_ROOT/build/install.sh";
 	cp "$PROJECT_ROOT/install-bot.sh" "$PROJECT_ROOT/build/install-bot.sh";
 	cp "$PROJECT_ROOT/favicon.ico" "$PROJECT_ROOT/build/favicon.ico";
