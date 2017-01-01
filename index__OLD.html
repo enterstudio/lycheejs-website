@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lychee.js - Next-Gen Isomorphic Application Engine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.25, maximum-scale=2, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="64x64 32x32 16x16">
+	<link rel="apple-touch-icon" sizes="256x256" href="./design/apple-touch-icon.png">
+	<meta property="og:image" content="/design/desktop.png">
+	<meta property="og:image:width" content="256">
+	<meta property="og:image:height" content="256">
+	<meta property="og:description" content="Next-Gen Isomorphic Application Engine for Embedded, Console, Mobile, Server and Desktop">
+
+	<!-- DESIGN -->
+	<link rel="stylesheet" href="./design/index.css">
+	<script src="./design/index.js"></script>
+
+	<!-- CUSTOM -->
+	<link rel="stylesheet" href="./design/highlight.css">
+	<script src="./design/highlight.js"></script>
+
+	<!-- BOOTSTRAP -->
+	<script src="/libraries/lychee/build/html/core.js"></script>
+	<script src="/libraries/lychee/build/html/dist/index.js"></script>
+
+</head>
+<body>
+
+	<section id="workflow">
+		<article>
+			<h3>lychee.js Workflow</h3>
+			<p>
+				The lychee.js Engine consists of several
+				Software Bots that allow the easier creation
+				and automation of software.
+			</p>
+			<p>
+				Right after you've installed lychee.js,
+				you can execute the Harvester in order
+				to have a fully working and peer-cloud
+				synchronized instance right away.
+			</p>
+			<pre><code class="bash">cd /opt/lycheejs;
+
+lycheejs-harvester start development;</code></pre>
+			<p>
+				This page will explain what each Software
+				Bot in the lychee.js Engine does and what
+				you can do with it.
+			</p>
+		</article>
+		<svg width="512" height="256" viewBox="0 0 512 256" version="1.1" x="0px" y="0px">
+			<path stroke-linejoin="round" d="m256 16 V108" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m256 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<g font-weight="300">
+				<text x="186" y="138"><tspan fill="#ffffff">Harvester ready</tspan></text>
+			</g>
+		</svg>
+		<div>
+			<article class="center">
+				<h4>Breeder</h4>
+				<p>
+					The Breeder pulls Libraries from the
+					cloud and pushes Libraries and
+					Projects to the cloud. It's also the
+					starting point for your Application.
+				</p>
+				<p>
+					As each Application is integrated with
+					the Harvester, you can setup your
+					Application in several isomorphic ways.
+				</p>
+				<p>
+					Initializing a lychee.js Project
+					is easy, you can simply call the
+					<code>lycheejs-breeder init</code>
+					command in the project folder.
+				</p>
+				<pre><code class="bash">cd /opt/lycheejs;
+
+mkdir ./projects/my-application;
+cd ./projects/my-application;
+
+# Initialize isomorphic Boilerplate
+lycheejs-breeder init;</code></pre>
+				<p>
+					If you want to host the Project on your
+					own server cloud later, you can isolate all
+					Libraries any time by pulling them into the
+					Project.
+				</p>
+				<pre><code class="bash">cd /opt/lycheejs;
+cd ./projects/my-application;
+
+# Install all builds of lychee Library
+lycheejs-breeder pull /libraries/lychee;</code></pre>
+			</article>
+		</div>
+		<svg width="512" height="256" viewBox="0 0 512 256" version="1.1" x="0px" y="0px">
+			<path stroke-linejoin="round" d="m112 16 V108" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m112 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m400 108 V16" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" d="m400 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<g font-weight="300">
+				<text x="90" y="138"><tspan fill="#ffffff">pulls</tspan></text>
+				<text x="374" y="138"><tspan fill="#ffffff">syncs</tspan></text>
+			</g>
+		</svg>
+		<div>
+			<h3 class="left">Private Garden</h3>
+			<h3 class="right">Harvester</h3>
+			<p class="left">
+				The Private Garden is where your
+				installed Libraries and Projects are.
+				These are offline copies, but they can
+				be synchronized anytime.
+			</p>
+			<p class="right">
+				The Harvester is the Software Bot
+				that automates all CI-related tasks
+				and can control both the Fertilizer
+				and Strainer.
+			</p>
+			<article class="left">
+				<h4>Libraries</h4>
+				<p>
+					The <code>/libraries</code> folder
+					contains all Libraries made with
+					lychee.js. The standard Libraries
+					are all isomorphic, they can be
+					reused across all platforms.
+				</p>
+			</article>
+			<article class="right clear">
+				<h4>Fertilizer</h4>
+				<p>
+					The Fertilizer automatically
+					builds all Libraries and
+					Projects into their isomorphic
+					build targets and bundles them
+					with their runtimes.
+				</p>
+				<pre><code class="bash">cd /opt/lycheejs;
+
+lycheejs-fertilizer auto /projects/boilerplate;</code></pre>
+			</article>
+			<article class="left">
+				<h4>Projects</h4>
+				<p>
+					The <code>/projects</code> folder
+					contains all Projects made with
+					lychee.js. The standard Projects
+					are boilerplates that you can
+					reuse and modify to fit your own
+					needs.
+				</p>
+			</article>
+			<article class="right clear">
+				<h4>Strainer</h4>
+				<p>
+					The Strainer automatically
+					validates all Libraries and
+					Projects, fuzz-tests them
+					and throws potential integration
+					errors while trying to fix them
+					intelligently.
+				</p>
+				<pre><code class="bash">cd /opt/lycheejs;
+
+lycheejs-strainer stash /projects/boilerplate;</code></pre>
+			</article>
+		</div>
+		<svg width="512" height="256" viewBox="0 0 512 256" version="1.1" x="0px" y="0px">
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m112 108 V16" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" d="m112 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m400 108 V16" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" d="m400 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<g font-weight="300">
+				<text x="90" y="138"><tspan fill="#ffffff">edits</tspan></text>
+				<text x="364" y="138"><tspan fill="#ffffff">controls</tspan></text>
+			</g>
+		</svg>
+		<div>
+			<h3>Cultivator Tools</h3>
+			<p>
+				The Cultivator Tools help you to manage
+				your Projects. They are available as Web
+				Tools and native GUI Tools and are fully
+				integrated with the lychee.js Engine and
+				the Operating System.
+			</p>
+			<article class="left">
+				<h4>Editor</h4>
+				<a href="./asset/screenshot/editor.jpg" target="_blank">
+					<img width="228" height="128" src="./asset/screenshot/editor-thumb.jpg">
+				</a>
+				<p>
+					The Editor allows to edit
+					your local Libraries and
+					Projects.
+				</p>
+			</article>
+			<article class="right clear">
+				<h4>Ranger</h4>
+				<a href="./asset/screenshot/ranger.jpg" target="_blank">
+					<img width="228" height="128" src="./asset/screenshot/ranger-thumb.jpg">
+				</a>
+				<p>
+					The Ranger allows to
+					manage all builds, servers,
+					error reports, sessions and
+					connected peers.
+				</p>
+			</article>
+		</div>
+		<svg width="512" height="256" viewBox="0 0 512 256" version="1.1" x="0px" y="0px">
+			<path stroke-linejoin="round" d="m256 16 V108" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<path stroke-linejoin="round" marker-end="url(#idea-arrow1)" d="m256 154 V240" stroke="#1f2726" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" fill="none"/>
+			<g font-weight="300">
+				<text x="146" y="138"><tspan fill="#ffffff">Project ready for Harvest</tspan></text>
+			</g>
+		</svg>
+		<article class="center">
+			<h4>Breeder</h4>
+			<p>
+				If you are satisfied with your
+				application, you can use the
+				Breeder to push your application
+				to the cloud.
+			</p>
+			<p>
+				Note that you need a unique
+				identifier in order to have a
+				public application that others
+				can find properly in the Garden
+				of Eden.
+			</p>
+			<pre><code class="bash">cd /opt/lycheejs;
+cd ./projects/my-application;
+
+# Push current project as "my-application" to the cloud
+lycheejs-breeder push;</code></pre>
+		</article>
+	</section>
+</main>
+</body>
+</html>

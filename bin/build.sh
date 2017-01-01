@@ -12,10 +12,7 @@ fi;
 if [ -e "$LYCHEEJS_HELPER" ]; then
 
 	cd $PROJECT_ROOT;
-	"$LYCHEEJS_HELPER" env:node ./bin/build-project.js;
 
-	mkdir -p "$PROJECT_ROOT/build/libraries/lychee";
-	cp "$PROJECT_ROOT/build/lychee.pkg" "$PROJECT_ROOT/build/libraries/lychee/lychee.pkg";
 	cp "$PROJECT_ROOT/install.sh" "$PROJECT_ROOT/build/install.sh";
 	cp "$PROJECT_ROOT/install-bot.sh" "$PROJECT_ROOT/build/install-bot.sh";
 	cp "$PROJECT_ROOT/favicon.ico" "$PROJECT_ROOT/build/favicon.ico";
