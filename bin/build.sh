@@ -13,6 +13,9 @@ if [ -e "$LYCHEEJS_HELPER" ]; then
 
 	cd $PROJECT_ROOT;
 
+	rm -rf "$PROJECT_ROOT/build";
+	mkdir -p "$PROJECT_ROOT/build";
+
 	cp "$PROJECT_ROOT/index.html" "$PROJECT_ROOT/build/index.html";
 	cp "$PROJECT_ROOT/examples.html" "$PROJECT_ROOT/build/examples.html";
 	cp "$PROJECT_ROOT/workflow.html" "$PROJECT_ROOT/build/workflow.html";
@@ -27,8 +30,6 @@ if [ -e "$LYCHEEJS_HELPER" ]; then
 	cp -R "$PROJECT_ROOT/asset" "$PROJECT_ROOT/build/asset";
 	cp -R "$PROJECT_ROOT/design" "$PROJECT_ROOT/build/design";
 	cp -R "$PROJECT_ROOT/download" "$PROJECT_ROOT/build/download";
-
-	rm -rf "$PROJECT_ROOT/build/html";
 
 	echo "SUCCESS";
 	exit 0;
