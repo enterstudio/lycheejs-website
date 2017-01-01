@@ -251,6 +251,10 @@ article {
 	letter-spacing: 0.02em;
 }
 
+article:first-of-type {
+	margin-top: 128px;
+}
+
 article:last-of-type {
 	margin-bottom: 128px;
 }
@@ -293,6 +297,21 @@ article > div:last-child,
 article > p:last-child,
 article > ul:last-child {
 	padding-bottom: 16px;
+}
+
+article figure {
+	display: block;
+	margin: 0px;
+	padding: 16px 16px;
+	background: #1f2726;
+}
+
+article figure > img {
+	display: block;
+	max-width: 256px;
+	max-height: 256px;
+	border: 0;
+	outline: none;
 }
 
 article a,
